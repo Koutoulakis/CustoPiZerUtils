@@ -40,7 +40,7 @@ if matching_files:
     zip_name = zip_file_url.rsplit('/', 1)[-1]
     print ("zip_name = ", zip_name)
     # Download the zip file to the download directory
-    #wget.download(zip_file_url, os.path.join(download_dir, zip_name))
+    wget.download(zip_file_url, os.path.join(download_dir, zip_name))
 
     # Print the downloaded file path
     print("\nDownloaded:", os.path.join(download_dir, zip_name))
